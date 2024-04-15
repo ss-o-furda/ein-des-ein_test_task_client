@@ -73,4 +73,4 @@ export const TABS = [
 
 export const IMAGES_COLUMNS_COUNT = 8;
 
-export const BASE_URL = `http://3.92.216.5:80`;
+export const BASE_URL = `https://fast-api.orikfw.com`;
