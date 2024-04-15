@@ -1,0 +1,23 @@
+.images {
+  max-width: 100%;
+  display: grid;
+  gap: 0.75rem 0.75rem;
+  overflow: scroll;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.image_name {
+  width: 100px;
+  font-weight: 300;
+  font-size: 0.75rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

@@ -1,0 +1,20 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--gray);
+}
+
+.tab {
+  padding: 0.313rem 0.938rem;
+  cursor: pointer;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--gray);
+  margin-bottom: -1px; /* to make tab border on same level as block border  */
+}
+
+.active {
+  color: var(--yellow);
+  background-color: var(--light-yellow);
+  border-bottom-color: var(--yellow);
+}
