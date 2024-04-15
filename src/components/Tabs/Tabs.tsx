@@ -11,7 +11,7 @@ const Tabs = () => {
         <Link
           to={tab.path}
           className={`${styles.tab} ${
-            location.pathname === tab.path ? styles.active : ""
+            location.pathname.includes(tab.path) ? styles.active : ""
           } `}
         >
           {tab.name}

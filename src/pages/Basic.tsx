@@ -17,7 +17,10 @@ const Basic = () => {
         searchClasses.length > 0
           ? `?${CLASSES_SEARCH_PARAM}=${searchClasses}`
           : "";
-      fetch(`${BASE_URL}/data${location.pathname}${params}`)
+      const target = location.pathname.endsWith("/")
+        ? location.pathname.slice(0, -1)
+        : location.pathname;
+      fetch(`${BASE_URL}/data${target}${params}`)
         .then((r) => r.json())
         .then((data) => setImagesData(data));
     };
