@@ -17,7 +17,9 @@ const Basic = () => {
         searchClasses.length > 0
           ? `?${CLASSES_SEARCH_PARAM}=${searchClasses}`
           : "";
-      fetch(`${BASE_URL}/data${location.pathname}${params}`)
+      fetch(`${BASE_URL}/data${location.pathname}${params}`, {
+        referrerPolicy: "unsafe-url",
+      })
         .then((r) => r.json())
         .then((data) => setImagesData(data));
     };
