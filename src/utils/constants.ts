@@ -64,6 +64,13 @@ export const CLASS_COLOR: Record<string, { color: string; fillColor: string }> =
     },
   };
 
+export const TABS = [
+  { name: "All groups", path: ALL_GROUPS },
+  { name: "Train", path: TRAIN },
+  { name: "Valid", path: VALID },
+  { name: "Test", path: TEST },
+];
+
 export const IMAGES_COLUMNS_COUNT = 8;
 
-export const BASE_URL = "http://127.0.0.1:8000";
+export const BASE_URL = `http://127.0.0.1:${process.env.PORT}`;
