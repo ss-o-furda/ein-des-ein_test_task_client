@@ -73,4 +73,4 @@ export const TABS = [
 
 export const IMAGES_COLUMNS_COUNT = 8;
 
-export const BASE_URL = `http://127.0.0.1:${process.env.PORT}`;
+export const BASE_URL = `http://3.92.216.5:80`;
